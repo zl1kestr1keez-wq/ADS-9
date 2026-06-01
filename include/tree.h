@@ -12,11 +12,12 @@ struct PMNode {
 };
 
 class PMTree {
-public:
+ public:
     std::vector<PMNode*> roots;
     explicit PMTree(const std::vector<char>& in);
     ~PMTree();
-private:
+
+ private:
     void build(PMNode* node, std::vector<char> remaining);
 };
 
